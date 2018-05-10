@@ -4,10 +4,8 @@ import com.haulmont.testtask.database.entities.PatientsEntity;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 
-import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
@@ -44,10 +42,6 @@ public class PatientsDAO implements DAOInterface<PatientsEntity, String> {
     }
 
     private static SessionFactory getSessionFactory() {
-//        Configuration configuration = new Configuration().configure();
-//        StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder()
-//                .applySettings(configuration.getProperties());
-//        SessionFactory sessionFactory = configuration.buildSessionFactory(builder.build());
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         return sessionFactory;
     }

@@ -1,7 +1,6 @@
 package com.haulmont.testtask.database.entities;
 
 import javax.persistence.*;
-import java.util.Objects;
 
 @Entity
 @Table(name = "DOCTORSSTATISTIC", schema = "PUBLIC", catalog = "PUBLIC")

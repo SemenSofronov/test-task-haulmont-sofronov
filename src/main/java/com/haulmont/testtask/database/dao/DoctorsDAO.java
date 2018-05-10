@@ -2,7 +2,6 @@ package com.haulmont.testtask.database.dao;
 
 import com.haulmont.testtask.database.entities.DoctorsEntity;
 import com.haulmont.testtask.database.entities.DoctorsStatistic;
-import com.haulmont.testtask.database.entities.PatientsEntity;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -44,10 +43,6 @@ public class DoctorsDAO implements DAOInterface<DoctorsEntity, String> {
     }
 
     private static SessionFactory getSessionFactory() {
-//        Configuration configuration = new Configuration().configure();
-//        StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder()
-//                .applySettings(configuration.getProperties());
-//        SessionFactory sessionFactory = configuration.buildSessionFactory(builder.build());
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         return sessionFactory;
     }

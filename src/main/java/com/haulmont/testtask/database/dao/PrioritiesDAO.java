@@ -1,7 +1,6 @@
 package com.haulmont.testtask.database.dao;
 
 import com.haulmont.testtask.database.entities.PrioritiesEntity;
-import com.haulmont.testtask.database.entities.RecipesEntity;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -43,10 +42,6 @@ public class PrioritiesDAO implements DAOInterface<PrioritiesEntity, String> {
     }
 
     private static SessionFactory getSessionFactory() {
-//        Configuration configuration = new Configuration().configure();
-//        StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder()
-//                .applySettings(configuration.getProperties());
-//        SessionFactory sessionFactory = configuration.buildSessionFactory(builder.build());
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         return sessionFactory;
     }

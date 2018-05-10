@@ -9,12 +9,10 @@ import com.haulmont.testtask.database.entities.PatientsEntity;
 import com.haulmont.testtask.database.entities.PrioritiesEntity;
 import com.haulmont.testtask.database.entities.RecipesEntity;
 import com.vaadin.data.Binder;
-import com.vaadin.data.converter.StringToIntegerConverter;
 import com.vaadin.data.converter.StringToLongConverter;
 import com.vaadin.data.validator.RegexpValidator;
 import com.vaadin.ui.*;
 
-import java.sql.Timestamp;
 import java.util.List;
 
 public class RecipesDetailCard extends Window {

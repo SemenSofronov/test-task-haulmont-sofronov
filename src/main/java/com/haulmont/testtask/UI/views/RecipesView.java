@@ -1,18 +1,13 @@
 package com.haulmont.testtask.UI.views;
 
 import com.haulmont.testtask.UI.cards.RecipesDetailCard;
-import com.haulmont.testtask.database.controllers.PrioritiesController;
 import com.haulmont.testtask.database.controllers.RecipesController;
-import com.haulmont.testtask.database.entities.PrioritiesEntity;
 import com.haulmont.testtask.database.entities.RecipesEntity;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.ui.*;
 import com.vaadin.ui.Grid.SelectionMode;
 import com.vaadin.ui.themes.ValoTheme;
-
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class RecipesView extends VerticalLayout implements View {
 
@@ -24,11 +19,6 @@ public class RecipesView extends VerticalLayout implements View {
 
 
     public RecipesView() {
-
-//        PrioritiesController prioritiesController = new PrioritiesController();
-//        prioritiesController.persist(new PrioritiesEntity("Нормальный"));
-//        prioritiesController.persist(new PrioritiesEntity("Cito (Срочный)"));
-//        prioritiesController.persist(new PrioritiesEntity("Statim (Немедленный)"));
 
         Panel panel = new Panel("Панель фильтрации");
         panel.setSizeUndefined();

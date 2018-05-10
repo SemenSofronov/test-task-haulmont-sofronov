@@ -1,6 +1,5 @@
 package com.haulmont.testtask.database.dao;
 
-import com.haulmont.testtask.database.entities.PatientsEntity;
 import com.haulmont.testtask.database.entities.RecipesEntity;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -44,10 +43,6 @@ public class RecipesDAO implements DAOInterface<RecipesEntity, String> {
     }
 
     private static SessionFactory getSessionFactory() {
-//        Configuration configuration = new Configuration().configure();
-//        StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder()
-//                .applySettings(configuration.getProperties());
-//        SessionFactory sessionFactory = configuration.buildSessionFactory(builder.build());
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         return sessionFactory;
     }
@@ -92,7 +87,6 @@ public class RecipesDAO implements DAOInterface<RecipesEntity, String> {
         q.select(c);
         TypedQuery<RecipesEntity> queryForData = getCurrentSession().createQuery(q);
         return queryForData.getResultList();
-//        return getCurrentSession().createCriteria(PatientsEntity.class).list();
     }
 
     public void deleteAll() {

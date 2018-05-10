@@ -3,7 +3,6 @@ package com.haulmont.testtask.UI.cards;
 import com.haulmont.testtask.database.controllers.PatientsController;
 import com.haulmont.testtask.database.entities.PatientsEntity;
 import com.vaadin.data.Binder;
-import com.vaadin.data.converter.StringToIntegerConverter;
 import com.vaadin.data.validator.RegexpValidator;
 import com.vaadin.ui.*;
 
@@ -80,10 +79,6 @@ public class PatientsDetailCard extends Window {
         layout.addComponent(middleName);
         layout.addComponent(phoneNumber);
         setContent(layout);
-    }
-
-    private boolean validateAllFields() {
-        return true;
     }
 
     private void bindingFields() {

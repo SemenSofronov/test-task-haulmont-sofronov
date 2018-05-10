@@ -4,13 +4,11 @@ package com.haulmont.testtask.UI.cards;
 import com.haulmont.testtask.database.controllers.DoctorsController;
 import com.haulmont.testtask.database.entities.DoctorsStatistic;
 import com.vaadin.ui.Grid;
-import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.Window;
 
 public class StatisticCard extends Window {
     VerticalLayout layout = new VerticalLayout();
-    HorizontalLayout buttonsBar = new HorizontalLayout();
     DoctorsController doctorsController = new DoctorsController();
 
     public StatisticCard(String caption) {
