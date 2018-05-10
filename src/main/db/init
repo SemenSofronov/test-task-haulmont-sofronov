@@ -2,7 +2,7 @@
 insert into patients(name,surname,middle_name,phone) values('Семён','Софронов','Дмитриевич','89277301792');
 
 -- doctors
-insert into doctors(name,surname,middle_name,specialization) values('Геннадий','Бакулин','Владимирович','онейромаг');
+insert into doctors(name,surname,middle_name,specialization) values('Геннадий','Бакулин','Владимирович','Онейромаг');
 
 -- priorities
 insert into priorities(name) values('Нормальный');
@@ -10,4 +10,4 @@ insert into priorities(name) values('Cito (Срочный)');
 insert into priorities(name) values('Statim (Немедленный)');
 
 -- recipes
-insert into recipes(description,patient,doctor,created_timestamp,validity,priority) values('Спокойный сон',1,1,'2018-05-02 11:30:45','2018-05-07 11:30:45',1);
+insert into recipes(description,patient,doctor,created_timestamp,validity,priority) values('Спокойный сон',15,13,'2018-05-02 11:30:45','2018-05-07 11:30:45',1);
